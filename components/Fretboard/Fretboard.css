@@ -1,0 +1,66 @@
+.fretboard-diagram-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto repeat(4, 30px);
+    max-width: 250px;
+    margin: 10px auto;
+    border-left: 4px solid var(--text-light); 
+    border-right: 1px solid var(--text-secondary);
+    background-color: var(--bg-dark);
+}
+
+.fretboard-cell {
+    position: relative;
+    border-right: 1px solid var(--text-secondary); 
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.fret-cell {
+    border-bottom: 1px solid var(--text-secondary); 
+    height: 30px;
+}
+
+.nut-cell {
+    border-bottom: 2px solid var(--text-light); 
+    height: 20px;
+}
+
+.string-marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.string-marker.muted {
+    color: var(--text-secondary);
+}
+
+.string-marker.open {
+    border: 1px solid var(--text-light);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+}
+
+.finger-position {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-yellow); 
+    border: 2px solid var(--active-purple); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: 0 0 5px rgba(233, 255, 75, 0.7);
+}

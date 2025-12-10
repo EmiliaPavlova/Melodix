@@ -1,0 +1,62 @@
+.app-header {
+    text-align: center;
+}
+
+.app-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: var(--spacing-unit);
+}
+
+.app-logo-image {
+    object-fit: contain;
+}
+
+.app-title {
+    margin-bottom: var(--spacing-unit);
+    color: var(--color-white);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-shadow:
+    -1px -1px 0 var(--color-white),
+    1px -1px 0 var(--color-white),
+    -1px 1px 0 var(--color-white),
+    1px 1px 0 var(--color-white);
+}
+
+.app-subtitle {
+    margin-top: 0;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    color: var(--primary-yellow);
+    font-size: 1.5rem;
+}
+
+.chord-main-area {
+    padding-top: var(--spacing-unit);
+    padding-bottom: var(--spacing-unit);
+    min-height: 40vh;
+}
+
+.current-song-info {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    margin-top: calc(var(--spacing-unit) * 2);
+}
+
+.audio-player {
+    width: 90%;
+    margin: 40px auto 20px;
+    background-color: var(--bg-dark);
+    border-radius: 8px;
+}
+
+.music-icon {
+    font-size: 2rem;
+    color: var(--active-purple);
+    margin-bottom: 0.5rem;
+}

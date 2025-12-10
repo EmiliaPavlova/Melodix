@@ -1,0 +1,35 @@
+.song-selector-container {
+    display: flex;
+    padding: var(--spacing-unit) 0;
+    margin-top: calc(var(--spacing-unit) * 3);
+    gap: calc(var(--spacing-unit) * 1.5);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.song-card {
+    background-color: var(--container-light);
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 3px solid transparent; 
+    cursor: pointer;
+}
+
+.song-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.song-card.active {
+    border-color: var(--active-purple);
+    box-shadow: 0 0 15px rgba(138, 75, 242, 0.7); 
+    transform: scale(1.05);
+}
+
+.song-card h3 {
+    margin: 0 0 0.2rem 0;
+    font-size: 1rem;
+    color: var(--primary-yellow);
+}

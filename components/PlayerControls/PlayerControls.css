@@ -1,0 +1,84 @@
+.player-controls {
+    background-color: var(--container-light);
+    padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
+    border-radius: 12px 12px 0 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing-unit) * 2);
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.control-button {
+    background: none;
+    border: none;
+    color: var(--text-light); 
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.15s, transform 0.15s;
+    font-size: 1.5rem; 
+}
+
+.control-button:hover {
+    color: var(--primary-yellow);
+    transform: scale(1.1);
+}
+
+.play-pause-button {
+    color: var(--primary-yellow); 
+    font-size: 2.5rem;
+    background-color: var(--active-purple); 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.play-pause-button:hover {
+    color: var(--text-light); 
+    background-color: var(--primary-yellow); 
+    transform: scale(1.05);
+}
+
+.progress-area-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 500px; /* По-голям max-width от предишния progress-bar-container */
+    gap: 8px; /* Разстояние между текста и бара */
+}
+
+.time-display {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    width: 45px;
+    text-align: center;
+}
+
+.progress-bar-container {
+    flex-grow: 1;
+    height: 8px;
+    background-color: var(--bg-dark);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: var(--primary-yellow);
+    transition: width 0.1s linear;
+}

@@ -1,0 +1,23 @@
+.chord-container {
+    margin: calc(var(--spacing-unit) * 2) auto var(--spacing-unit); 
+    text-align: center;
+}
+
+.current-chord-name {
+    margin: 0 0 5px 0;
+    color: var(--primary-yellow);
+    text-shadow: 0 0 10px rgba(233, 255, 75, 0.4);
+    font-weight: 900;
+}
+
+.current-lyric-text {
+    font-size: 1.6em;
+    margin-top: var(--spacing-unit);
+    color: var(--text-light);
+}
+
+.placeholder-text {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    padding: var(--spacing-unit);
+}
