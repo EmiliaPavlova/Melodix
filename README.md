@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## MELODIX: Your Musical Buddy
 
 An interactive platform for self-learning musical instruments. The platform displays the correct chords and lyrics in real time, synchronized with the playing song. Only guitar included at the moment.
-
+![logo](./public/melodix-logo.png)
 
 ## Getting Started
 
